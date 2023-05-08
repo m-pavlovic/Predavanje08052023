@@ -11,4 +11,11 @@ public class Payment {
     public String getPayment() {
         return payment;
     }
+
+    @Override
+    public String toString() {
+        return "Payment{" +
+                "payment='" + payment + '\'' +
+                '}';
+    }
 }

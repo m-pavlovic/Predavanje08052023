@@ -38,13 +38,15 @@ public class Package {
 
     public boolean checkPayment() {
         System.out.println("Enter payment type: ");
+        boolean status = false;
         String payment = sc.nextLine();
         for (Payment p : payments) {
             if (p.getPayment().equals(payment)) {
-                return true;
+                status = true;
+                break;
             }
         }
-        return false;
+        return status;
     }
 
     private float randItemPrice() {
@@ -77,6 +79,9 @@ public class Package {
                 items.add(sneakers);
             }
         }
+        System.out.println("Content added to package.");
+        calculateTotalPackagePrice();
+        calculateTotalPackageItems();
 
     }
 
@@ -84,14 +89,32 @@ public class Package {
         for (Item item : items) {
             this.packagePrice += item.calculatePrice();
         }
+        System.out.println("Price is calculated...");
     }
 
     public void calculateTotalPackageItems() {
         for (Item item : items) {
             this.totalItems += item.getNumItems();
         }
+        System.out.println("Items are counted...");
     }
 
+    @Override
+    public String toString() {
+        return "Package{" +
+                "id=" + id +
+                ", webShop='" + webShop + '\'' +
+                ", destination='" + destination + '\'' +
+                ", customer=" + customer +
+                ", packagePrice=" + packagePrice +
+                ", totalItems=" + totalItems +
+                ", items=" + items +
+                '}';
+    }
+
+    public void packageInfo() {
+        System.out.println(this);
+    }
 
     class T_Shirt extends Item {
 
