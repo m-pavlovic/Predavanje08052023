@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb55f531-662c-41d5-afa4-b409ce1e67be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Predavanje08052023.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vjezba5_zad3/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vjezba5_zad3/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vjezba5_zad3/Package.java" afterDir="false" />
+    <list default="true" id="bb55f531-662c-41d5-afa4-b409ce1e67be" name="Changes" comment="Vjezba 5, 3. zadatak - prvi dio">
+      <change afterPath="$PROJECT_DIR$/src/vjezba5_zad3/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vjezba5_zad3/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vjezba5_zad3/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vjezba5_zad3/Package.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vjezba5_zad3/Package.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +51,18 @@
       <option name="presentableId" value="Default" />
       <updated>1683555683752</updated>
     </task>
+    <task id="LOCAL-00001" summary="Vjezba 5, 3. zadatak - prvi dio">
+      <created>1683557186466</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683557186467</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Vjezba 5, 3. zadatak - prvi dio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vjezba 5, 3. zadatak - prvi dio" />
   </component>
 </project>
