@@ -11,9 +11,8 @@ public class Test {
         Package pack1 = new Package("Amazon", "Zagreb", c1, p1);
         System.out.println(c1);
         System.out.println(p1);
-        pack1.packageInfo();
-        //pack1.setScanner(sc);
         pack1.putContent();
+        pack1.packageInfo();
 
     }
 }

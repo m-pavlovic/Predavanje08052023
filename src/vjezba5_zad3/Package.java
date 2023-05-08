@@ -15,7 +15,7 @@ public class Package {
     private List<Item> items;
     private static final float MINF = 10;
     private static final float MAXF = 150;
-    private static final int KOMS = 1;
+    private static final int KOMS = 10;
     private String[] typeItems = {"T_Shirt", "Sneakers"};
     private Set<Payment> payments;
     private Scanner sc;
@@ -63,13 +63,6 @@ public class Package {
         for (int i = 0; i < numItems; i++) {
             indx[i] = ThreadLocalRandom.current().nextInt(typeItems.length);
         }
-//        for (int i = 0; i < numItems; i++) {
-//            if (typeItems[indx[i]].equals("T_Shirt")) {
-//                items.add(new T_Shirt(randItemPrice(), randNumItems()));
-//            } else {
-//                items.add(new Sneakers(randItemPrice(), randNumItems()));
-//            }
-//        }
         for (int i = 0; i < numItems; i++) {
             if (indx[i] == 0) {
                 T_Shirt t_shirt = new T_Shirt(randItemPrice(), randNumItems());
