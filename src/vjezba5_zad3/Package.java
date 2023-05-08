@@ -37,6 +37,13 @@ public class Package {
     }
 
     public boolean checkPayment() {
+        System.out.println("Enter payment type: ");
+        String payment = sc.nextLine();
+        for (Payment p : payments) {
+            if (p.getPayment().equals(payment)) {
+                return true;
+            }
+        }
         return false;
     }
 
