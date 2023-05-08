@@ -1,7 +1,6 @@
 package vjezba5_zad3;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Package {
@@ -18,15 +17,27 @@ public class Package {
     private static final float MAXF = 150;
     private static final int KOMS = 1;
     private String[] typeItems = {"T_Shirt", "Sneakers"};
+    private Set<Payment> payments;
+    private Scanner sc;
 
 
 
-    public Package(String shop, String destination, Customer customer) {
+    public Package(String shop, String destination, Customer customer, Payment payment) {
         this.id = cntID++;
         this.items = new ArrayList<>();
+        this.payments = new HashSet<>();
         this.webShop = shop;
         this.destination = destination;
         this.customer = customer;
+        this.payments.add(payment);
+    }
+
+    public void setScanner(Scanner sc) {
+        this.sc = sc;
+    }
+
+    public boolean checkPayment() {
+        return false;
     }
 
     private float randItemPrice() {
